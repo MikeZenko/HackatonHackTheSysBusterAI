@@ -76,11 +76,12 @@ export function HeroSection() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary-500/20 to-secondary-500/20"></div>
-              <img
-                src="/api/placeholder/600/400"
-                alt="DebtBuster AI Dashboard"
-                className="w-full h-auto"
-              />
+              <div className="w-full h-[400px] bg-gradient-to-br from-primary-100 to-secondary-100 dark:from-primary-900/20 dark:to-secondary-900/20 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-6xl mb-4">📊</div>
+                  <p className="text-lg font-semibold text-gray-600 dark:text-gray-400">DebtBuster AI Dashboard</p>
+                </div>
+              </div>
             </div>
             {/* Floating elements */}
             <motion.div

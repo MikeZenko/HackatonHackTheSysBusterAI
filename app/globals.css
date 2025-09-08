@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(249 250 251);
+  color: rgb(17 24 39);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -50,9 +68,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
